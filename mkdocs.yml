@@ -1,0 +1,14 @@
+site_name: mulilanguage repo example
+theme: material
+plugins:
+  - mkdoxy:
+      projects:
+        AllProjects:
+          src-dirs: src
+          full-doc: True
+          doxy-cfg:
+            FILE_PATTERNS: "*.py *.bash *.m *.c *.pl" 
+            EXTENSION_MAPPING: .bash=C .m=C++
+            FILTER_PATTERNS: "*.bash=./doxygen-bash.sed *.m=doxygen/doxymatlab/m2cpp.pl"
+            FILTER_SOURCE_PATTERNS: "*.m=doxygen/doxymatlab/m2srcm.pl"
+            RECURSIVE: True

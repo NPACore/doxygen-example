@@ -1,0 +1,6 @@
+[submodule "doxygen-awesome-css"]
+	path = doxygen/doxygen-awesome-css
+	url = https://github.com/jothepro/doxygen-awesome-css.git
+[submodule "doxygen/doxymatlab"]
+	path = doxygen/doxymatlab
+	url = https://github.com/simgunz/doxymatlab/
