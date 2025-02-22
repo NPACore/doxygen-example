@@ -7,3 +7,9 @@
 [submodule "doxydown"]
 	path = doxydown
 	url = https://github.com/vstakhov/doxydown
+[submodule "sphinx/sphinxcontrib-golangdomain"]
+	path = sphinx/sphinxcontrib-golangdomain
+	url = https://bitbucket.org/ymotongpoo/sphinxcontrib-golangdomain.git
+[submodule "sphinx/matlabdomain"]
+	path = sphinx/matlabdomain
+	url = https://github.com/sphinx-contrib/matlabdomain

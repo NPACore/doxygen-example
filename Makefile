@@ -1,5 +1,6 @@
-.PHONY: all
+.PHONY: all sphinx
 all: doxygen-out/html/
+sphinx: docs-sphinx/
 
 doxygen-bash.sed:
 	curl -L https://raw.githubusercontent.com/Anvil/bash-doxygen/refs/heads/master/doxygen-bash.sed -o $@
@@ -17,3 +18,11 @@ cpan-doxy:
 
 doxygen-out/html/:  Doxyfile $(wildcard doc/*) $(wildcard src/*) | doxygen-bash.sed doxygen/doxygen-awesome-css/ doxygen/doxymatlab/
 	doxygen
+
+docs-sphinx/: sphinx/conf.py $(wildcard sphinx/*rst) $(wildcard src_sphinix/*)
+	source venv/bin/activate && sphinx-build sphinx/ docs-sphinx/
+
+docs-sphinx/venv/:
+	virtualenv venv
+	source venv/bin/activate && pip install sphinx && pip install -e ./matlabdomain/
+
