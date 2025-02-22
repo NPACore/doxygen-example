@@ -4,3 +4,6 @@
 [submodule "doxygen/doxymatlab"]
 	path = doxygen/doxymatlab
 	url = https://github.com/simgunz/doxymatlab/
+[submodule "doxydown"]
+	path = doxydown
+	url = https://github.com/vstakhov/doxydown
