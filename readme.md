@@ -26,7 +26,7 @@ make # runs doxygen
 ```
 
 ## Sphinx
-`sphinx/conf.py` and `sphinx/*rst` describe how to document code in `src_sphinix/` to crate `docs-sphinx/`
+`sphinx/conf.py` and `sphinx/*rst` describe how to document code in `src_sphinx/` to crate `docs-sphinx/`
 
 ```
 make sphinx # sphinx-build sphinx/ docs-sphinx/

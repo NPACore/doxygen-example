@@ -28,7 +28,7 @@ Specific functions
 ++++++++++++++++++
 
 python version: :py:func:`add2.add2`
-matlab version: :mat:func:`src_sphinix.add3`
+matlab version: :mat:func:`src_sphinx.add3`
 
 * :ref:`genindex`
 * :ref:`modindex`

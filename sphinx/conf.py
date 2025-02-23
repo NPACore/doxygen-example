@@ -11,7 +11,7 @@ copyright = '2025, Will Foran'
 author = 'Will Foran'
 
 import sys,os
-sys.path.insert(0, os.path.abspath("../src_sphinix"))  # Source code dir relative to this file
+sys.path.insert(0, os.path.abspath("../src_sphinx"))  # Source code dir relative to this file
 
 
 # -- General configuration ---------------------------------------------------
@@ -24,7 +24,7 @@ autosummary_generate = True
 primary_domain = ''
 
 templates_path = ["_templates"]
-# only run for "src_sphinix"
+# only run for "src_sphinx"
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store",
                     "doc", "docs", "docs-sphinx",
                     "doxydown", "doxygen", "doxygen-out",

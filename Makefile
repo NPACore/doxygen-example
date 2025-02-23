@@ -17,10 +17,11 @@ cpan-doxy:
 	cpanm Doxygen::Filter::Perl
 
 doxygen-out/html/:  Doxyfile $(wildcard doc/*) $(wildcard src/*) | doxygen-bash.sed doxygen/doxygen-awesome-css/ doxygen/doxymatlab/
+	eval $(perl -I $HOME/perl5/lib/perl5 -Mlocal::lib) && \
 	doxygen
 
-docs-sphinx/: sphinx/conf.py $(wildcard sphinx/*rst) $(wildcard src_sphinix/*)
-	source venv/bin/activate && sphinx-build sphinx/ docs-sphinx/
+docs-sphinx/: sphinx/conf.py $(wildcard sphinx/*rst) $(wildcard src_sphinx/*)
+	source sphinx/venv/bin/activate && sphinx-build sphinx/ docs-sphinx/
 
 docs-sphinx/venv/:
 	virtualenv venv
